@@ -27,7 +27,7 @@ jobs:
             docker ps
       
       - name: Remove old files
-        run: docker exec frontpg rm -rf /usr/local/apache2/htdocs/*
+        run: docker exec frontmysql rm -rf /usr/local/apache2/htdocs/*
 
       - name: cp Angular build to containers
         run:  |
